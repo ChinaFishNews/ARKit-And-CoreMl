@@ -7,23 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		57B0ECF51F9735DB0069B519 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0ECF41F9735DB0069B519 /* AppDelegate.swift */; };
-		57B0ECF71F9735DB0069B519 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B0ECF61F9735DB0069B519 /* art.scnassets */; };
 		57B0ECF91F9735DB0069B519 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0ECF81F9735DB0069B519 /* ViewController.swift */; };
 		57B0ECFC1F9735DB0069B519 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B0ECFA1F9735DB0069B519 /* Main.storyboard */; };
 		57B0ECFE1F9735DB0069B519 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57B0ECFD1F9735DB0069B519 /* Assets.xcassets */; };
 		57B0ED011F9735DB0069B519 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57B0ECFF1F9735DB0069B519 /* LaunchScreen.storyboard */; };
+		57B0ED0A1F9739CA0069B519 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57B0ED091F9739CA0069B519 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		57B0ECF11F9735DB0069B519 /* ARKit And CoreMl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ARKit And CoreMl.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		57B0ECF41F9735DB0069B519 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		57B0ECF61F9735DB0069B519 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
 		57B0ECF81F9735DB0069B519 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		57B0ECFB1F9735DB0069B519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		57B0ECFD1F9735DB0069B519 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57B0ED001F9735DB0069B519 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57B0ED021F9735DB0069B519 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57B0ED091F9739CA0069B519 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +54,7 @@
 		57B0ECF31F9735DB0069B519 /* ARKit And CoreMl */ = {
 			isa = PBXGroup;
 			children = (
-				57B0ECF41F9735DB0069B519 /* AppDelegate.swift */,
-				57B0ECF61F9735DB0069B519 /* art.scnassets */,
+				57B0ED091F9739CA0069B519 /* AppDelegate.swift */,
 				57B0ECF81F9735DB0069B519 /* ViewController.swift */,
 				57B0ECFA1F9735DB0069B519 /* Main.storyboard */,
 				57B0ECFD1F9735DB0069B519 /* Assets.xcassets */,
@@ -126,7 +123,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57B0ECF71F9735DB0069B519 /* art.scnassets in Resources */,
 				57B0ED011F9735DB0069B519 /* LaunchScreen.storyboard in Resources */,
 				57B0ECFE1F9735DB0069B519 /* Assets.xcassets in Resources */,
 				57B0ECFC1F9735DB0069B519 /* Main.storyboard in Resources */,
@@ -140,8 +136,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57B0ED0A1F9739CA0069B519 /* AppDelegate.swift in Sources */,
 				57B0ECF91F9735DB0069B519 /* ViewController.swift in Sources */,
-				57B0ECF51F9735DB0069B519 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,11 +274,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TRDY8DHHBD;
 				INFOPLIST_FILE = "ARKit And CoreMl/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Lvmama.ARKit-And-CoreMl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -292,11 +292,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TRDY8DHHBD;
 				INFOPLIST_FILE = "ARKit And CoreMl/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.Lvmama.ARKit-And-CoreMl";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
